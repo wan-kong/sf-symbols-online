@@ -1,7 +1,0 @@
-{
-  "buildCommand": "bun run build",
-  "devCommand": "bun run dev:web",
-  "framework": "nextjs",
-  "installCommand": "bun install",
-  "outputDirectory": "apps/web/out"
-}
