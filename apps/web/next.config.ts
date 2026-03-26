@@ -1,4 +1,3 @@
-import "@sf-symbols-online/env/web";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {

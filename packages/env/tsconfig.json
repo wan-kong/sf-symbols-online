@@ -1,6 +1,0 @@
-{
-  "extends": "@sf-symbols-online/config/tsconfig.base.json",
-  "compilerOptions": {
-    "strictNullChecks": true
-  }
-}
