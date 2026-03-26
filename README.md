@@ -2,6 +2,8 @@
 
 A beautiful online browser for Apple's SF Symbols.
 
+**Live Demo**: <https://sf-symbols-online-web.vercel.app/>
+
 ![Preview](./docs/imgs/preview.png)
 
 ## Features
