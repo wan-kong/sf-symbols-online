@@ -1,5 +1,5 @@
-import { readdirSync, writeFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { mkdirSync, readdirSync, writeFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
 
 const GLYPHS_DIR = resolve(
   import.meta.dirname,
@@ -185,6 +185,8 @@ function main() {
     categories: Object.fromEntries(manifest.categories),
   };
 
+  // Ensure output directory exists
+  mkdirSync(dirname(OUTPUT_FILE), { recursive: true });
   writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2));
 
   console.log(`Generated manifest with ${manifest.totalCount} icons`);
