@@ -1,0 +1,12 @@
+{
+  "name": "@sf-symbols-online/sf-symbols",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SF Symbols icons as PNG files",
+  "exports": {
+    "./glyphs": "./glyphs"
+  },
+  "files": [
+    "glyphs"
+  ]
+}

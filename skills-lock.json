@@ -1,6 +1,11 @@
 {
   "version": 1,
   "skills": {
+    "bun": {
+      "source": "bun.sh",
+      "sourceType": "well-known",
+      "computedHash": "3e68bc4bcd1adaa88a78c2cb6364f82ac885df0935e4d65fd3cdd3ad58d69b49"
+    },
     "next-best-practices": {
       "source": "vercel-labs/next-skills",
       "sourceType": "github",

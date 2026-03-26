@@ -49,3 +49,7 @@ coverage
 .cache
 tmp
 temp
+
+# Generated icon assets
+apps/web/public/icons/glyphs/
+apps/web/public/icons/manifest.json

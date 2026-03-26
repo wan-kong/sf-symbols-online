@@ -7,7 +7,6 @@
       "dependencies": {
         "@sf-symbols-online/env": "workspace:*",
         "dotenv": "catalog:",
-        "zod": "catalog:",
       },
       "devDependencies": {
         "@biomejs/biome": "2.4.7",
@@ -22,16 +21,17 @@
       "version": "0.1.0",
       "dependencies": {
         "@sf-symbols-online/env": "workspace:*",
+        "@sf-symbols-online/sf-symbols": "workspace:*",
         "@sf-symbols-online/ui": "workspace:*",
         "babel-plugin-react-compiler": "^1.0.0",
         "dotenv": "catalog:",
+        "fuse.js": "^7.1.0",
         "lucide-react": "catalog:",
         "next": "^16.2.0",
         "next-themes": "catalog:",
         "react": "catalog:",
         "react-dom": "catalog:",
         "sonner": "catalog:",
-        "zod": "catalog:",
       },
       "devDependencies": {
         "@sf-symbols-online/config": "workspace:*",
@@ -53,12 +53,15 @@
       "dependencies": {
         "@t3-oss/env-nextjs": "^0.13.1",
         "dotenv": "catalog:",
-        "zod": "catalog:",
       },
       "devDependencies": {
         "@sf-symbols-online/config": "workspace:*",
         "typescript": "^5",
       },
+    },
+    "packages/sf-symbols": {
+      "name": "@sf-symbols-online/sf-symbols",
+      "version": "1.0.0",
     },
     "packages/ui": {
       "name": "@sf-symbols-online/ui",
@@ -95,7 +98,6 @@
     "react-dom": "^19.2.3",
     "sonner": "^2.0.5",
     "tailwindcss": "^4.1.18",
-    "zod": "^4.1.13",
   },
   "packages": {
     "@alloc/quick-lru": ["@alloc/quick-lru@5.2.0", "https://registry.npmmirror.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz", {}, "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="],
@@ -317,6 +319,8 @@
     "@sf-symbols-online/config": ["@sf-symbols-online/config@workspace:packages/config"],
 
     "@sf-symbols-online/env": ["@sf-symbols-online/env@workspace:packages/env"],
+
+    "@sf-symbols-online/sf-symbols": ["@sf-symbols-online/sf-symbols@workspace:packages/sf-symbols"],
 
     "@sf-symbols-online/ui": ["@sf-symbols-online/ui@workspace:packages/ui"],
 
@@ -563,6 +567,8 @@
     "fs-extra": ["fs-extra@11.3.4", "https://registry.npmmirror.com/fs-extra/-/fs-extra-11.3.4.tgz", { "dependencies": { "graceful-fs": "^4.2.0", "jsonfile": "^6.0.1", "universalify": "^2.0.0" } }, "sha512-CTXd6rk/M3/ULNQj8FBqBWHYBVYybQ3VPBw0xGKFe3tuH7ytT6ACnvzpIQ3UZtB8yvUKC2cXn1a+x+5EVQLovA=="],
 
     "function-bind": ["function-bind@1.1.2", "https://registry.npmmirror.com/function-bind/-/function-bind-1.1.2.tgz", {}, "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA=="],
+
+    "fuse.js": ["fuse.js@7.1.0", "https://registry.npmmirror.com/fuse.js/-/fuse.js-7.1.0.tgz", {}, "sha512-trLf4SzuuUxfusZADLINj+dE8clK1frKdmqiJNb1Es75fmI5oY6X2mxLVUciLLjxqw/xr72Dhy+lER6dGd02FQ=="],
 
     "fuzzysort": ["fuzzysort@3.1.0", "https://registry.npmmirror.com/fuzzysort/-/fuzzysort-3.1.0.tgz", {}, "sha512-sR9BNCjBg6LNgwvxlBd0sBABvQitkLzoVY9MYYROQVX/FvfJ4Mai9LsGhDgd8qYdds0bY77VzYd5iuB+v5rwQQ=="],
 

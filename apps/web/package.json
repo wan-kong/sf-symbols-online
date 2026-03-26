@@ -4,21 +4,19 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 3001",
+    "prebuild": "bun run scripts/generate-icon-manifest.ts && rm -rf public/icons/glyphs && cp -r ../../packages/sf-symbols/glyphs public/icons/glyphs",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "@sf-symbols-online/env": "workspace:*",
     "@sf-symbols-online/ui": "workspace:*",
-    "babel-plugin-react-compiler": "^1.0.0",
-    "dotenv": "catalog:",
+    "fuse.js": "^7.1.0",
     "lucide-react": "catalog:",
     "next": "^16.2.0",
     "next-themes": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "sonner": "catalog:",
-    "zod": "catalog:"
+    "sonner": "catalog:"
   },
   "devDependencies": {
     "@sf-symbols-online/config": "workspace:*",
@@ -26,6 +24,7 @@
     "@types/node": "^20",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
+    "babel-plugin-react-compiler": "^1.0.0",
     "tailwindcss": "catalog:",
     "typescript": "^5"
   }
